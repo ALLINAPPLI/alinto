@@ -4,8 +4,11 @@
 ## Overview
 This extension provides SMS integration with Alinto.
 
-
 You can only send SMS with this extension and not receive messages.
+
+Phone numbers must be in the format 0660606060 or +33660606060.
+
+There should be no spaces, periods or hyphens separating the numbers.
 
 ## Install the extension
 To install the extension, you must download the file in ZIP format which can be found here "https://github.com/Dev-AllInAppli/alinto".
@@ -49,6 +52,10 @@ Cette extension permet d'utiliser le fournisseur SMS Alinto
 
 Cette extension vous permet seulement d'envoyer des SMS et ne permet pas d'en recevoir.
 
+Les numéros de téléphone doivent être au format 0660606060 ou +33660606060.
+
+Il ne doit pas avoir d'espace, de point ou de tiret qui sépare les chiffres.
+
 ## Installer l'extension
 Pour installer l'extension , il faut télécharger le fichier au format ZIP qui se trouve ici "https://github.com/Dev-AllInAppli/alinto".
 
@@ -73,8 +80,8 @@ Dans le champ URL de l'API, indiquez "https://scim.alinto.net/api/v2/sms".(requi
 
 Dans les PARAMÈTRES DE L'API, n'écrivez rien.
 
-Laisser la casse "Fournisseur Actif?" coché. 
+Laissez la case "Fournisseur Actif?" cochée. 
 
-Laisser la casse "Est-ce le fournisseur par défaut?" coché.
+Laissez la case "Est-ce le fournisseur par défaut?" cochée.
 
 
