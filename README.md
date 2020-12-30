@@ -6,6 +6,8 @@ This extension provides SMS integration with Alinto.
 
 You can only send SMS with this extension and not receive messages.
 
+To create an account, go to "https://www.alinto.com/fr/" and contact support
+
 Phone numbers must be in the format 0660606060 or +33660606060.
 
 There should be no spaces, periods or hyphens separating the numbers.
@@ -51,6 +53,8 @@ Leave the case "Is this the default provider?" checked.
 Cette extension permet d'utiliser le fournisseur SMS Alinto
 
 Cette extension vous permet seulement d'envoyer des SMS et ne permet pas d'en recevoir.
+
+Pour créer un compte il faut aller sur "le https://www.alinto.com/fr/" et contacter le support.
 
 Les numéros de téléphone doivent être au format 0660606060 ou +33660606060.
 
