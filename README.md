@@ -13,7 +13,7 @@ Phone numbers must be in the format 0660606060 or +33660606060.
 There should be no spaces, periods or hyphens separating the digits.
 
 ## Install the extension
-To install the extension, you must download the file in ZIP format which can be found here "https://github.com/Dev-AllInAppli/alinto".
+To install the extension, you must download the file in ZIP format which can be found here "https://github.com/allinappli/alinto".
 
 Once the extension has been downloaded, you have to unzip the file and place it in "mywebsite/wp-content/uploads/civicrm/ext".
 
@@ -33,7 +33,7 @@ In Password field give the valid password for Alinto account.(required)
 
 In Api Type select "http".(required)
 
-In API URL field give "https://scim.alinto.net/api/v2/sms".(required)
+In API URL field give "https://scim.alinto.net/api/v2/sms". (required)
 
 In the API PARAMETERS, do not write anything.
 
@@ -61,7 +61,7 @@ Les numéros de téléphone doivent être au format 0660606060 ou +33660606060.
 Il ne doit pas avoir d'espace, de point ou de tiret qui sépare les chiffres.
 
 ## Installer l'extension
-Pour installer l'extension , il faut télécharger le fichier au format ZIP qui se trouve ici "https://github.com/Dev-AllInAppli/alinto".
+Pour installer l'extension , il faut télécharger le fichier au format ZIP qui se trouve ici "https://github.com/allinappli/alinto".
 
 Une fois l'extension télécharger , il faut décompresser le fichier et le placer dans "mywebsite/wp-content/uploads/civicrm/ext".
 
@@ -80,12 +80,12 @@ Dans le champ Mot de passe, indiquez le mot de passe valide d'un compte Alinto.(
 
 Dans Type d'API, sélectionnez "http".(required)
 
-Dans le champ URL de l'API, indiquez "https://scim.alinto.net/api/v2/sms".(required)
+Dans le champ URL de l'API, indiquez "https://scim.alinto.net/api/v2/sms". (required)
 
 Dans les PARAMÈTRES DE L'API, n'écrivez rien.
 
-Laissez la case "Fournisseur Actif?" cochée. 
+Laissez la case "Fournisseur Actif ?" cochée. 
 
-Laissez la case "Est-ce le fournisseur par défaut?" cochée.
+Laissez la case "Est-ce le fournisseur par défaut ?" cochée.
 
 
