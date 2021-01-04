@@ -10,7 +10,7 @@ To create an account, go to "https://www.alinto.com/fr/" and contact support
 
 Phone numbers must be in the format 0660606060 or +33660606060.
 
-There should be no spaces, periods or hyphens separating the numbers.
+There should be no spaces, periods or hyphens separating the digits.
 
 ## Install the extension
 To install the extension, you must download the file in ZIP format which can be found here "https://github.com/Dev-AllInAppli/alinto".
