@@ -35,7 +35,7 @@ In Api Type select "http".(required)
 
 In API URL field give "https://scim.alinto.net/api/v2/sms". (required)
 
-In the API PARAMETERS, do not write anything.
+In the API PARAMETERS, just type spaces.
 
 Leave the case "Active Provider?" checked.
 
@@ -82,7 +82,7 @@ Dans Type d'API, sélectionnez "http".(required)
 
 Dans le champ URL de l'API, indiquez "https://scim.alinto.net/api/v2/sms". (required)
 
-Dans les PARAMÈTRES DE L'API, n'écrivez rien.
+Dans les PARAMÈTRES DE L'API, mettez des espaces.
 
 Laissez la case "Fournisseur Actif ?" cochée. 
 
