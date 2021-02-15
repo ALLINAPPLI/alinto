@@ -80,7 +80,7 @@ Dans le champ Mot de passe, indiquez le mot de passe valide d'un compte Alinto.(
 
 Dans Type d'API, sélectionnez "http".(required)
 
-Dans le champ URL de l'API, indiquez "https://scim.alinto.net/api/v2/sms". (required)
+Dans le champ URL de l'API, indiquez "https://m2s.alinto.net/api/v2/sms". (required)
 
 Dans les PARAMÈTRES DE L'API, mettez des espaces.
 
