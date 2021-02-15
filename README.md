@@ -33,7 +33,7 @@ In Password field give the valid password for Alinto account.(required)
 
 In Api Type select "http".(required)
 
-In API URL field give "https://scim.alinto.net/api/v2/sms". (required)
+In API URL field give "https://m2s.alinto.net/api/v2/sms". (required)
 
 In the API PARAMETERS, just type spaces.
 
