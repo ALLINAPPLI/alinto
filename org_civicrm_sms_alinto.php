@@ -147,7 +147,7 @@ class org_civicrm_sms_alinto extends CRM_SMS_Provider {
    * @return mixed true on sucess or PEAR_Error object
    * @access public
    */
-  function send($recipients, $header, $message, $jobID = NULL) {
+  function send($recipients, $header, $message, $jobID = NULL, $sourceContactID = NULL) {
     $url = $this->_providerInfo['api_url'];
     $user = $this->_providerInfo['username'];
     $password = $this->_providerInfo['password'];
