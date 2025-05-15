@@ -54,16 +54,16 @@ Cette extension permet d'utiliser le fournisseur SMS Alinto
 
 Cette extension vous permet seulement d'envoyer des SMS et ne permet pas d'en recevoir.
 
-Pour créer un compte il faut aller sur "le https://www.alinto.com/fr/" et contacter le support.
+Pour créer un compte il faut aller sur "https://www.alinto.com/fr/" et contacter le support.
 
 Les numéros de téléphone doivent être au format 0660606060 ou +33660606060.
 
 Il ne doit pas avoir d'espace, de point ou de tiret qui sépare les chiffres.
 
 ## Installer l'extension
-Pour installer l'extension , il faut télécharger le fichier au format ZIP qui se trouve ici "https://github.com/allinappli/alinto".
+Pour installer l'extension, il faut soit cloner via `git clone`, soit télécharger le fichier au format ZIP qui se trouve ici "https://github.com/allinappli/alinto".
 
-Une fois l'extension télécharger , il faut décompresser le fichier et le placer dans "mywebsite/wp-content/uploads/civicrm/ext".
+Une fois l'extension téléchargée, il faut décompresser le fichier et le placer dans "mywebsite/wp-content/uploads/civicrm/ext".
 
 ## Configurer l'extension
 Administrer -> Paramètres système -> Fourniseur sms
@@ -72,7 +72,7 @@ Ajouter un fournisseur SMS
 
 Sélectionnez "Alinto" dans le champ de sélection.(required)
 
-Dans le champ Titre, donnez n'importe quel titre.
+Dans le champ Titre, saisissez n'importe quel titre.
 
 Dans le champ Nom d'utilisateur, indiquez le nom d'utilisateur valide d'un compte Alinto.(required)
 
