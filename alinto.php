@@ -22,13 +22,13 @@ function alinto_civicrm_config(&$config) {
 function alinto_civicrm_install() {
   $groupID = CRM_Core_DAO::getFieldValue('CRM_Core_DAO_OptionGroup','sms_provider_name','id','name');
   $params  =
-    array('option_group_id' => $groupID,
+    ['option_group_id' => $groupID,
           'label' => 'Alinto',
           'value' => 'org.civicrm.sms.alinto',
           'name'  => 'alinto',
           'is_default' => 1,
           'is_active'  => 1,
-          'version'    => 3,);
+          'version'    => 3,];
   require_once 'api/api.php';
   civicrm_api( 'option_value','create', $params );
   return _alinto_civix_civicrm_install();
@@ -44,7 +44,7 @@ function alinto_civicrm_uninstall() {
   if ($optionID)
     CRM_Core_BAO_OptionValue::del($optionID);
 
-  $filter    =  array('name'  => 'org.civicrm.sms.alinto');
+  $filter    =  ['name'  => 'org.civicrm.sms.alinto'];
   $Providers =  CRM_SMS_BAO_Provider::getProviders(False, $filter, False);
   if ($Providers){
     foreach($Providers as $key => $value){
@@ -65,7 +65,7 @@ function alinto_civicrm_enable() {
   if ($optionID)
     CRM_Core_BAO_OptionValue::setIsActive($optionID, TRUE);
 
-  $filter    =  array('name' => 'org.civicrm.sms.alinto');
+  $filter    =  ['name' => 'org.civicrm.sms.alinto'];
   $Providers =  CRM_SMS_BAO_Provider::getProviders(False, $filter, False);
   if ($Providers){
     foreach($Providers as $key => $value){
@@ -86,7 +86,7 @@ function alinto_civicrm_disable() {
   if ($optionID)
     CRM_Core_BAO_OptionValue::setIsActive($optionID, FALSE);
 
-  $filter    =  array('name' =>  'org.civicrm.sms.alinto');
+  $filter    =  ['name' =>  'org.civicrm.sms.alinto'];
   $Providers =  CRM_SMS_BAO_Provider::getProviders(False, $filter, False);
   if ($Providers){
     foreach($Providers as $key => $value){

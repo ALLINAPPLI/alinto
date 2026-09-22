@@ -50,7 +50,7 @@ class org_civicrm_sms_alinto extends CRM_SMS_Provider {
    * provider details
    * @var	string
    */
-  protected $_providerInfo = array();
+  protected $_providerInfo = [];
 
   /**
    * Alinto API Server Session ID
@@ -77,7 +77,7 @@ class org_civicrm_sms_alinto extends CRM_SMS_Provider {
    * @var object
    * @static
    */
-  static private $_singleton = array();
+  static private $_singleton = [];
 
   /**
    * Constructor
@@ -86,7 +86,7 @@ class org_civicrm_sms_alinto extends CRM_SMS_Provider {
    *
    * @return void
    */
-  function __construct($provider = array( ), $skipAuth = FALSE) {
+  function __construct($provider = [ ], $skipAuth = FALSE) {
     // Adjust for old civi versions which pass in numeric value.
 
     $this->_apiType = CRM_Utils_Array::value('api_type', $provider, 'http');
@@ -122,14 +122,14 @@ class org_civicrm_sms_alinto extends CRM_SMS_Provider {
    * @static
    *
    */
-  static function &singleton($providerParams = array(
-    ), $force = FALSE) {
+  static function &singleton($providerParams = [
+    ], $force = FALSE) {
     $providerID = $providerParams['provider_id'] ?? NULL;
     $skipAuth   = $providerID ? FALSE : TRUE;
     $cacheKey   = (int) $providerID;
 
     if (!isset(self::$_singleton[$cacheKey]) || $force) {
-      $provider = array();
+      $provider = [];
       if ($providerID) {
         $provider = CRM_SMS_BAO_Provider::getProviderInfo($providerID);
       }
@@ -153,10 +153,10 @@ class org_civicrm_sms_alinto extends CRM_SMS_Provider {
     $password = $this->_providerInfo['password'];
 
     if ($this->_apiType = 'http') {
-     $postDataArray = array( 
+     $postDataArray = [
       'message' => $message,
-      'recipients' => array($recipients)   
-     );
+      'recipients' => [$recipients]
+     ];
      /**
        * Put recipients in desired format.
        *
@@ -175,11 +175,11 @@ class org_civicrm_sms_alinto extends CRM_SMS_Provider {
      curl_setopt($this->_ch, CURLOPT_POST, 1);
      curl_setopt($this->_ch, CURLOPT_USERPWD, $user.':'.$password);
      $auth = base64_encode($user.':'.$password);
-     curl_setopt($this->_ch, CURLOPT_HTTPHEADER, array(
+     curl_setopt($this->_ch, CURLOPT_HTTPHEADER, [
       "Content-Type: application/json",
       "Accept: application/json",
       "Authorization: Basic $auth"
-     ));
+     ]);
      //content of the message you want to post and the recipient encoded in json and convert in curl
      curl_setopt($this->_ch, CURLOPT_POSTFIELDS, json_encode($postDataArray));
     
