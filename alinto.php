@@ -42,7 +42,7 @@ function alinto_civicrm_install() {
 function alinto_civicrm_uninstall() {
   $optionID = CRM_Core_DAO::getFieldValue('CRM_Core_DAO_OptionValue','alinto','id','name');
   if ($optionID)
-    CRM_Core_BAO_OptionValue::del($optionID);
+    CRM_Core_BAO_OptionValue::deleteRecord(['id' => $optionID]);
 
   $filter    =  ['name'  => 'org.civicrm.sms.alinto'];
   $Providers =  CRM_SMS_BAO_Provider::getProviders(False, $filter, False);
